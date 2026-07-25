@@ -1,5 +1,6 @@
 import { Phone, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'wouter';
 
 export function Footer() {
   return (
@@ -42,11 +43,14 @@ export function Footer() {
           <div>
             <h4 className="font-display font-bold text-secondary text-xl uppercase tracking-widest mb-6">Quick Links</h4>
             <ul className="space-y-3 font-semibold text-secondary/80">
-              <li><a href="#about" className="hover:text-primary transition-colors">About Mal</a></li>
-              <li><a href="#charters" className="hover:text-primary transition-colors">Charters & Pricing</a></li>
-              <li><a href="#locations" className="hover:text-primary transition-colors">Locations</a></li>
-              <li><a href="#boat" className="hover:text-primary transition-colors">The Boat</a></li>
-              <li><a href="https://imhookedfishingcharters.com.au/fishing-charter-bookings/#bookings" target="_blank" rel="noreferrer" className="text-primary hover:text-secondary transition-colors">Book Online</a></li>
+              <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
+              <li><Link href="/charters" className="hover:text-primary transition-colors">Charters Overview</Link></li>
+              <li><Link href="/charters/bay" className="hover:text-primary transition-colors">Bay Charters</Link></li>
+              <li><Link href="/charters/offshore" className="hover:text-primary transition-colors">Offshore Charters</Link></li>
+              <li><Link href="/gallery" className="hover:text-primary transition-colors">Gallery</Link></li>
+              <li><Link href="/about" className="hover:text-primary transition-colors">About Mal</Link></li>
+              <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
+              <li><a href="https://imhookedfishingcharters.com.au/fishing-charter-bookings/#bookings" target="_blank" rel="noreferrer" className="text-primary hover:text-secondary transition-colors mt-2 block">Book Online</a></li>
             </ul>
           </div>
 
