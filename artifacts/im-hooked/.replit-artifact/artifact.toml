@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "I'm Hooked Fishing Charters"
+version = "1.0.0"
+id = "artifacts/im-hooked"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18090
+
+[services.development]
+run = "pnpm --filter @workspace/im-hooked run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/im-hooked", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/im-hooked/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18090"
+BASE_PATH = "/"
