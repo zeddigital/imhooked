@@ -1,0 +1,15 @@
+{
+  // Static-asset Worker: no server code, Cloudflare serves ./dist from the edge.
+  // Deploy with:  npm run deploy      (needs CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID)
+  // Preview with: npm run preview     (uploads a versioned preview URL, no traffic shift)
+  "name": "imhooked-fishing-charters",
+  "compatibility_date": "2026-07-01",
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
