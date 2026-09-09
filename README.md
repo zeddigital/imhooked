@@ -47,9 +47,17 @@ command `npm run build` and output directory `dist`.
 
 Every heading, paragraph, price, season note, button label, anchor id (`#snapper`, `#mixed`,
 `#calamari`, `#whiting`, `#kingfish`, `#tuna`, `#sharks`), image `alt`/`title` attribute and all
-nine Google reviews are transcribed verbatim from the crawl. Section order matches the original
-Divi layout, including the image/text alternation down the charter list and the two-pairs-per-row
+nine Google reviews are transcribed from the crawl. Section order matches the original Divi
+layout, including the image/text alternation down the charter list and the two-pairs-per-row
 arrangement of the fishing-ground blocks.
+
+**Charter availability is the one deliberate copy change.** On the client's instruction every
+charter is now bookable from September onwards: the mixed *Snapper, Whiting & Calamari* charter
+no longer stops on 30 September, the snapper charter reads "September Onwards" rather than
+"Oct to Dec", and the January 18th commencement dates are gone from the kingfish, tuna and shark
+charters. The natural-season facts about each species are untouched. If the booking products
+themselves carry date restrictions in WooCommerce, those need the same change — this repo only
+controls the marketing copy.
 
 Content lives in `src/data/`, templates in `src/templates/` and `src/pages/`, and `build.mjs`
 writes `dist/`. Nothing else is involved — no bundler, no framework.

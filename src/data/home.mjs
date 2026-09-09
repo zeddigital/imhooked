@@ -1,9 +1,14 @@
 /**
- * Home page copy, transcribed verbatim from the captured source
+ * Home page copy, transcribed from the captured source
  * (reference/scrape → imhookedfishingcharters.com.au_.json / .md).
  *
  * Section order, headings, body copy, button labels, destinations, anchor ids
- * and image alt/title attributes all mirror the original Divi layout.
+ * and image alt/title attributes all mirror the original Divi layout, with one
+ * deliberate exception: charter availability was updated on the client's
+ * instruction so that every charter is bookable from September onwards. The
+ * mixed "Snapper, Whiting & Calamari" charter no longer stops on 30 September,
+ * and the January 18th commencement dates have been removed from the offshore
+ * charters. Natural-season facts about each species are unchanged.
  */
 
 import { origin, media, site } from './site.mjs';
@@ -19,7 +24,7 @@ export const about = {
   body: `Run by Mal, a qualified charter operator, who is passionate about fishing and brings a positive attitude to his charters. His customers describe the experience as <b>fun, f</b><strong>riendly and e</strong><strong>njoyable</strong>. Years of experience means Mal can bring you to the best fishing spots. He is happy to help beginner through to experienced anglers. (<a href="${site.social.googleReviews}" target="_blank" rel="noopener">see reviews</a>)`,
   h3: 'Take Me Straight To The Charters (Use buttons below)',
   buttons: [
-    { label: 'Snapper Charters Oct - Dec', href: origin('/snapper-fishing-charters/') },
+    { label: 'Snapper Charters Sept Onwards', href: origin('/snapper-fishing-charters/') },
     { label: 'Offshore Charters - Tuna Shark Kingfish', href: origin('/offshore-fishing/') },
   ],
 };
@@ -146,8 +151,8 @@ export const reviewsSection = {
 export const charters = [
   {
     id: 'snapper',
-    h2: 'Snapper Fishing Charters – Oct to Dec',
-    body: `Season: August to April. Our Snapper dedicated season is <strong>October to December</strong>. The main snapper fishing season begins in August (offshore), or in September in the bays (Western Port and Port Phillip), but snapper can be caught in winter. Outside of the dedicated Snapper season, please use our mixed charter option below. For more info <a href="${origin('/how-to-catch-snapper/')}">read here</a>`,
+    h2: 'Snapper Fishing Charters – September Onwards',
+    body: `Season: August to April. Snapper charters run from <strong>September right through the season</strong>, with October to December our peak Snapper period. The main snapper fishing season begins in August (offshore), or in September in the bays (Western Port and Port Phillip), but snapper can be caught in winter. Our mixed charter option below also runs all year round. For more info <a href="${origin('/how-to-catch-snapper/')}">read here</a>`,
     price: 'Prices start from $200 p.p.',
     buttons: [
       { label: 'Individual Bookings', href: origin('/product/snapper-fishing-charter/') },
@@ -169,7 +174,7 @@ export const charters = [
   {
     id: 'mixed',
     h2: 'Snapper, Whiting &amp; Calamari Fishing Charters',
-    body: 'Season: All year. Mixed Fishing charters commence from <strong>January 1st through to 30th September. </strong>We fish according to which fish are biting at the time to try and make sure you bring home a good catch.',
+    body: 'Season: All year. Mixed Fishing charters run <strong>all year round, including October, November and December.</strong> We fish according to which fish are biting at the time to try and make sure you bring home a good catch.',
     price: 'Prices start from $200 p.p.',
     buttons: [
       { label: 'Individual Bookings', href: origin('/product/snapper-whiting-squid-fishing-charter/') },
@@ -235,7 +240,7 @@ export const charters = [
   {
     id: 'kingfish',
     h2: 'Kingfish Fishing Charters',
-    body: `Season: January to April. The main kingfish fishing season begins in January either in or outside the heads on Port Phillip Bay and Westernport Bays. Kingfish Fishing charters commence from <strong>January 18th. </strong>For more info <a href="${origin('/how-to-catch-kingfish/')}">read here</a>`,
+    body: `Season: January to April. The main kingfish fishing season begins in January either in or outside the heads on Port Phillip Bay and Westernport Bays. Kingfish charters are <strong>available from September onwards.</strong> For more info <a href="${origin('/how-to-catch-kingfish/')}">read here</a>`,
     price: 'Prices start from $2,400.',
     buttons: [
       { label: 'Group Bookings (8)', href: origin('/?post_type=product&p=5111') },
@@ -256,7 +261,7 @@ export const charters = [
   {
     id: 'tuna',
     h2: 'Tuna Fishing Charters',
-    body: `Season: In Victoria, outside the heads of Port Phillip Bay, the season is February to September. Tuna Fishing charters commence from <strong>January 18th</strong>. For more info <a href="${origin('/how-to-catch-tuna/')}">read here</a>`,
+    body: `Season: In Victoria, outside the heads of Port Phillip Bay, the season is February to September. Tuna charters are <strong>available from September onwards</strong>. For more info <a href="${origin('/how-to-catch-tuna/')}">read here</a>`,
     price: 'Prices start from $2,400.',
     buttons: [
       { label: 'Group Bookings (8)', href: origin('/product/offshore-fishing-charter-book-boat/') },
@@ -278,7 +283,7 @@ export const charters = [
   {
     id: 'sharks',
     h2: 'Shark Fishing Charters',
-    body: `Season: All year. Shark Fishing charters commence from <strong>January 18th. </strong>For more info on how to catch gummy sharks <a href="${origin('/how-to-catch-gummy-sharks/')}">read here</a>`,
+    body: `Season: All year. Shark charters run <strong>all year round.</strong> For more info on how to catch gummy sharks <a href="${origin('/how-to-catch-gummy-sharks/')}">read here</a>`,
     price: 'Prices start from $2,400.',
     buttons: [
       { label: 'Group Bookings (8)', href: origin('/product/offshore-fishing-charter-book-boat/') },
