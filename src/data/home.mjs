@@ -5,10 +5,12 @@
  * Section order, headings, body copy, button labels, destinations, anchor ids
  * and image alt/title attributes all mirror the original Divi layout, with one
  * deliberate exception: charter availability was updated on the client's
- * instruction so that every charter is bookable from September onwards. The
- * mixed "Snapper, Whiting & Calamari" charter no longer stops on 30 September,
- * and the January 18th commencement dates have been removed from the offshore
- * charters. Natural-season facts about each species are unchanged.
+ * instruction so that nothing on the page blocks a booking. The mixed
+ * "Snapper, Whiting & Calamari" charter no longer stops on 30 September, the
+ * snapper charter runs from September through, and the January 18th
+ * commencement dates are gone from the kingfish, tuna and shark charters —
+ * those three now lead with "bookings are open all year round" and keep the
+ * biting season as supporting information rather than a gate.
  */
 
 import { origin, media, site } from './site.mjs';
@@ -240,7 +242,7 @@ export const charters = [
   {
     id: 'kingfish',
     h2: 'Kingfish Fishing Charters',
-    body: `Season: January to April. The main kingfish fishing season begins in January either in or outside the heads on Port Phillip Bay and Westernport Bays. Kingfish charters are <strong>available from September onwards.</strong> For more info <a href="${origin('/how-to-catch-kingfish/')}">read here</a>`,
+    body: `<strong>Bookings are open all year round</strong> — lock in your date now. Kingfish fish best from January to April, in and outside the heads on Port Phillip Bay and Westernport Bays. For more info <a href="${origin('/how-to-catch-kingfish/')}">read here</a>`,
     price: 'Prices start from $2,400.',
     buttons: [
       { label: 'Group Bookings (8)', href: origin('/?post_type=product&p=5111') },
@@ -261,7 +263,7 @@ export const charters = [
   {
     id: 'tuna',
     h2: 'Tuna Fishing Charters',
-    body: `Season: In Victoria, outside the heads of Port Phillip Bay, the season is February to September. Tuna charters are <strong>available from September onwards</strong>. For more info <a href="${origin('/how-to-catch-tuna/')}">read here</a>`,
+    body: `<strong>Bookings are open all year round</strong> — lock in your date now. Tuna fish best from February to September, outside the heads of Port Phillip Bay. For more info <a href="${origin('/how-to-catch-tuna/')}">read here</a>`,
     price: 'Prices start from $2,400.',
     buttons: [
       { label: 'Group Bookings (8)', href: origin('/product/offshore-fishing-charter-book-boat/') },
@@ -283,7 +285,7 @@ export const charters = [
   {
     id: 'sharks',
     h2: 'Shark Fishing Charters',
-    body: `Season: All year. Shark charters run <strong>all year round.</strong> For more info on how to catch gummy sharks <a href="${origin('/how-to-catch-gummy-sharks/')}">read here</a>`,
+    body: `<strong>Bookings are open all year round</strong> — lock in your date now. Sharks are on the chew right through the year. For more info on how to catch gummy sharks <a href="${origin('/how-to-catch-gummy-sharks/')}">read here</a>`,
     price: 'Prices start from $2,400.',
     buttons: [
       { label: 'Group Bookings (8)', href: origin('/product/offshore-fishing-charter-book-boat/') },
